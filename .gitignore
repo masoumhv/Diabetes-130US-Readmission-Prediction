@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dataset files
+data/raw/*.csv
+
+# Generated results
+data/processed/*
+results/*
+
+# VS Code
+.vscode/
