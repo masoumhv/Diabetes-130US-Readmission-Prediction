@@ -1,0 +1,3 @@
+Model,Accuracy,Precision,Recall,F1_Score,ROC_AUC,True_Negative,False_Positive,False_Negative,True_Positive
+Logistic Regression,0.68,0.183,0.523,0.272,0.657,12334,5273,1079,1184
+Random Forest,0.652,0.179,0.573,0.273,0.665,11667,5940,967,1296
