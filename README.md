@@ -305,3 +305,7 @@ The project demonstrates an end-to-end and leakage-aware machine-learning workfl
 The results show that previous healthcare utilization, particularly earlier inpatient admissions, contributes strongly to prediction. Random Forest provided slightly better recall and ROC-AUC than Logistic Regression, but overall discrimination remained moderate and precision remained low.
 
 The findings highlight that correct cohort definition, patient-level validation, transparent reporting, and clinically meaningful evaluation are more important than presenting accuracy alone.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
