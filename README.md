@@ -1,5 +1,7 @@
 # Hospital Readmission Prediction
 
+[![Python CI](https://github.com/masoumhv/Diabetes-130US-Readmission-Prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/masoumhv/Diabetes-130US-Readmission-Prediction/actions/workflows/ci.yml)
+
 A reproducible machine-learning pipeline for predicting whether a patient with diabetes will be readmitted to a hospital within 30 days.
 
 The project uses the **Diabetes 130-US Hospitals dataset** and focuses on responsible cohort definition, patient-level data splitting, class imbalance, model evaluation, threshold analysis, and interpretable reporting.
@@ -221,7 +223,7 @@ Diabetes-130US-Readmission-Prediction/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/masoumhv/Diabetes-130US-Readmission-Prediction.git
 cd Diabetes-130US-Readmission-Prediction
 ```
 
@@ -242,6 +244,10 @@ Install the dependencies:
 ```bash
 python -m pip install -r requirements.txt
 ```
+Install development dependencies for testing and linting:
+
+```bash
+python -m pip install -r requirements-dev.txt
 
 Download the dataset from UCI and place the CSV files inside:
 
