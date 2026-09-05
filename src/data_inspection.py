@@ -1,6 +1,7 @@
 
 import pandas as pd
 
+
 def inspect_data(data):
     print("Dataset shape:", data.shape)
 

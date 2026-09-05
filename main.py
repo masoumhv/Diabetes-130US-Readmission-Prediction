@@ -1,29 +1,20 @@
 import pandas as pd
 
-from src.data_loading import load_data
 from src.data_cleaning import clean_data
-from src.feature_engineering import (
-    create_target,
-    select_features
-)
+from src.data_loading import load_data
 from src.data_splitting import split_data
+from src.evaluation import analyze_thresholds, evaluate_model
+from src.feature_engineering import create_target, select_features
+from src.model import train_logistic_regression, train_random_forest
+from src.model_analysis import get_feature_importance
 from src.preprocessing import create_preprocessor
-from src.model import (
-    train_logistic_regression,
-    train_random_forest
-)
-from src.evaluation import evaluate_model, analyze_thresholds
 from src.visualization import (
     save_confusion_matrix,
-    save_roc_curve,
+    save_feature_importance_plot,
     save_precision_recall_curve,
+    save_roc_curve,
     save_threshold_plot,
-    save_feature_importance_plot
 )
-from src.model_analysis import (
-    get_feature_importance
-)
-
 
 DATA_PATH = "data/raw/diabetic_data.csv"
 RESULTS_PATH = "results/model_comparison.csv"
@@ -48,8 +39,8 @@ def main():
         X_test,
         y_train,
         y_test,
-        train_groups,
-        test_groups
+        _train_groups,
+        _test_groups
     ) = split_data(X, y, groups)
 
     preprocessor = create_preprocessor(
