@@ -185,6 +185,9 @@ Feature importance describes how strongly the trained model used a variable. It 
 
 ```text
 Diabetes-130US-Readmission-Prediction/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
 ├── data/
 │   ├── raw/
 │   └── processed/
@@ -199,6 +202,7 @@ Diabetes-130US-Readmission-Prediction/
 │   ├── random_forest_feature_importance.csv
 │   └── random_forest_feature_importance.png
 ├── src/
+│   ├── __init__.py
 │   ├── data_cleaning.py
 │   ├── data_inspection.py
 │   ├── data_loading.py
@@ -212,10 +216,12 @@ Diabetes-130US-Readmission-Prediction/
 ├── tests/
 │   ├── test_data_processing.py
 │   └── test_data_splitting.py
-├── main.py
-├── requirements.txt
 ├── .gitignore
-└── README.md
+├── LICENSE
+├── main.py
+├── README.md
+├── requirements.txt
+└── requirements-dev.txt
 ```
 
 ## Installation
